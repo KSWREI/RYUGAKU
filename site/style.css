@@ -162,7 +162,8 @@ img {
     background-repeat: no-repeat;
 }
 #home {
-    background-image: url(/media/bg1.webp);
+    background-image: linear-gradient(white, lightpink);
+    background-blend-mode: soft-light;
     height: 100px;
     margin-bottom: 40px;
     position: sticky;
@@ -210,6 +211,7 @@ img {
 }
 article {
     width: 80%;
+    padding-left: 10%;
 }
 .post-info {
     position: relative;
