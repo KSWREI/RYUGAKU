@@ -116,7 +116,7 @@ img {
 .logo {
     width: 80px;
     height: 80px;
-    margin-top: 0px;
+    margin-top: 8px;
 }
 
 .main-nav {
@@ -162,7 +162,7 @@ img {
     background-repeat: no-repeat;
 }
 #home {
-    background-image: linear-gradient(white, lightpink);
+    background-image: url(../site/media/bg1.webp);
     background-blend-mode: soft-light;
     height: 100px;
     margin-bottom: 40px;
@@ -198,6 +198,9 @@ img {
 #home-middle .page-title {
     text-align: center;
     padding-top: 80px;
+}
+#home-middle h1 {
+    font-size: 32px;
 }
 #home-middle p {
     text-align: center;
@@ -296,7 +299,7 @@ aside p {
 /*footer
 ------------------------ */
 footer {
-    background-image: url(/media/footer.jpg);
+    background-image: url(../site/media/footer.jpg);
     text-align: center;
     padding: 26px 0;
 }
