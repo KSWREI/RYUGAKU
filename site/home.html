@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>REI's 留學記事</title>
-        <!--FAVICON-->
-        <link rel="icon" type="image/png" href="media/favicon-32x32.png">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>REI's 留学記事</title>
+        <!--FAVICON add when ok-->
+        <link rel="icon" type="image/png" href="media/favicon-32x32.png" />
         <!-- CSS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
-        <!--SEO-->
-        <meta property="og:url" content="" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="REI's 留學記事"/>
-        <meta property="og:description" content=""/>
-        <meta property="og:image" content=""/>
+        <!--SEO add when active -->
+        <meta property="og:url" content="https://kswrei.github.io/RYUGAKU/site/home.html" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="REI's 留学記事" />
+        <meta property="og:description" content="#" />
+        <meta property="og:image" content="#" />
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Mar 22, 2023 00:00:00").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+            
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+            
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+              // Display the result in the element with id="demo"
+              document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+            
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "ゴーゴーゴー";
+              }
+            }, 1000);
+        </script>
     </head>
     <body>
         <div id="home-header" class="header-bg">
@@ -34,7 +64,7 @@
                     </ul>
                 </nav>
             </header>
-        </div><!-- /#home -->
+        </div>
         
         <div id="home-middle" class="hm-bg">
             <h1 class="page-title">レイ's 留學記事</h1>
@@ -48,7 +78,8 @@
                     <p class="post-date">11/23 <span>2022</span></p>
                     <p class="post-cat">記事の分類:日記</p>
                 </header>
-                <h2>いろんなことを記録している</h2>
+                <h2 id="timer"></h2>
+                <h2>Ｄ-Ｄay</h2>
                 <p>会話をすすまなきゃいけねい</p>
                 <p>家賃は７万ぐらいがいいけど、都市ガスは必要</p>
                 <p>バイトすれば浅草とか８．５万でもいい</p>
@@ -60,7 +91,7 @@
                 <p>地下鉄の定期券は4000円ぐらい、ただしポイントAB間での乗りしかない</p>
             
                 <a href="https://www.tokyo-skytree.jp/" target="_blank"><img src=media/sky.jpeg width="412" height="412" alt="skytree image"></a>
-                <br><br>
+                <br>
                 <a href="https://www.tokyo-skytree.jp/" target="_blank"><img src=media/sky.jpeg width="412" height="412" alt="skytree image"></a> 
             </article>
         
@@ -80,12 +111,9 @@
                     <li><a href="https://www.linemo.jp/" target="_blank">LINEMO</a></li>
                 </ul>    
                 <h2 class="sub-title">僕について</h2>
-                <p>
-                    ｈｔｍｌ初心者、パソコン組立つ好き、アニメ好き、あと料理とかが好き。
-                    色んな趣味があるけど、”創る”ということが好きと思う。
-                </p>
+                <p>ｈｔｍｌ初心者、パソコン組立つ好き、アニメ好き、あと料理とかが好き。色んな趣味があるけど、”創る”ということが好きと思う。</p>
             </aside>
-        </div><!-- /.home-content -->
+        </div><!-- /.home-contents -->
 
         <footer>
             <div class="wrapper">

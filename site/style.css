@@ -317,3 +317,8 @@ footer p {
     from {font-size: 1.25rem;}
     to {font-size: larger;}
 }
+/*timer */
+#timer {
+    font-weight: bold;
+    font-size: 32px;
+}
