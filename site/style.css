@@ -35,8 +35,8 @@ img {
         height: 300px;
     }
     .logo {
-        max-width: 30px;
-        max-height: 30px;
+        max-width: 40px;
+        max-height: 40px;
         margin-top: 8px;
     }
     
@@ -53,7 +53,7 @@ img {
     }
     .main-nav a {
         color: #432;
-        font-size: 12px;
+        font-size: 20px;
         font-weight: 800;
     }
     .main-nav a:hover {
@@ -122,7 +122,7 @@ img {
 
 .main-nav {
     display: flex;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     margin-top: 34px;
     list-style: none;
@@ -138,7 +138,7 @@ img {
 }
 .main-nav a:hover {
     color: gray;
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid grey;
     animation-name: ani1;
     animation-duration: 1s;
     animation-fill-mode: forwards;
