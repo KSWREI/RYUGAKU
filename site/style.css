@@ -139,6 +139,9 @@ img {
 .main-nav a:hover {
     color: gray;
     border-bottom: 3px solid blue;
+    animation-name: ani1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .page-header {
@@ -307,4 +310,10 @@ footer {
 footer p {
     color: #fff;
     font-size: 0.875rem;
+}
+
+/*ANIMATION*/
+@keyframes ani1 {
+    from {font-size: 1.25rem;}
+    to {font-size: larger;}
 }
